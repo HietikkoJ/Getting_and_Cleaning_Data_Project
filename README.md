@@ -34,6 +34,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 Files in this repo:
 ==========
-README.md
-CodeBook.md
-run_analysis.R
+* README.md
+* CodeBook.md
+* run_analysis.R
