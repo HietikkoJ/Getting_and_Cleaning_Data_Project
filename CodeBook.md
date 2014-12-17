@@ -60,26 +60,26 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 Cleaning steps:
 ===========
 
-1. Merge rows for these data sets (in this order):
+* 1. Merge rows for these data sets (in this order):
 * X_train + X_test
 * subject_train + subject_test
 * y_train + y_test
 
-2. Assign column names for (X_train + X_test) from (features.txt, column 2) 
+* 2. Assign column names for (X_train + X_test) from (features.txt, column 2) 
 
-3. Get the corresponding names for activityIDs for (y_train + y_test) from activity_labels.txt.
+* 3. Get the corresponding names for activityIDs for (y_train + y_test) from activity_labels.txt.
 After that, remove the ID number and leave only the description string.
 Rename column to “activity”
 
-4. Change the column name in (subject_train + subject_test) to “subject”
+* 4. Change the column name in (subject_train + subject_test) to “subject”
 
-5. Pick only the measurements from (X_train + X_test) that are either mean or standard deviation
+* 5. Pick only the measurements from (X_train + X_test) that are either mean or standard deviation
 
-6. Column merge the 3 data files (columns from left to right):
+* 6. Column merge the 3 data files (columns from left to right):
 * (subject_train + subject_test): "subject"
 * (y_train + y_test): "activity"
 * Last 66 columns: (X_train + X_test): measurements
 
-7. Aggregate data according to “activity” and “subject”, mean as aggregation method
+* 7. Aggregate data according to “activity” and “subject”, mean as aggregation method
 
-(8. write “tidyData.txt”)
+* (8. write “tidyData.txt”)
